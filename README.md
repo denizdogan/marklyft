@@ -1,3 +1,5 @@
+# NOTE: This library is not ready for use quite yet. The documentation is not up to date and there are a few design decisions to iron out.
+
 # 💪 `marklyft` 😎
 
 This is another benchmarking tool for Node.js.
