@@ -1,11 +1,11 @@
-import mobx from 'mobx'
+import { reaction } from 'mobx'
 import { Suite } from '..'
 import { Plugin } from '../Plugin'
 import * as util from '../util'
 
 export class DefaultOutputPlugin extends Plugin {
   public setup(suite: Suite): this {
-    mobx.reaction(
+    reaction(
       () => suite.status,
       (status, reaction) => {
         if (!status.started) {
